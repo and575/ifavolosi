@@ -23,22 +23,19 @@ body {
   margin: 0;
   min-height: 100vh;
   color: var(--ink);
-  font-family: "Nunito", system-ui, -apple-system, BlinkMacSystemFont,
-    "Segoe UI", sans-serif;
+  font-family: "Nunito", sans-serif;
+
   background:
-    radial-gradient(circle at 12% 18%, rgba(255, 232, 143, 0.9) 0 6%, transparent 7%),
-    radial-gradient(circle at 88% 14%, rgba(123, 215, 223, 0.95) 0 7%, transparent 8%),
-    radial-gradient(circle at 78% 82%, rgba(236, 97, 116, 0.75) 0 8%, transparent 9%),
-    radial-gradient(circle at 18% 82%, rgba(201, 242, 199, 0.85) 0 7%, transparent 8%),
     linear-gradient(
-      135deg,
-      #f97571 0%,
-      #ffd267 26%,
-      #8ad8db 52%,
-      #ff8d5d 78%,
-      #e85c87 100%
-    );
-  overflow-x: hidden;
+      rgba(255, 247, 238, 0.75),
+      rgba(255, 247, 238, 0.75)
+    ),
+    url("images/albero-deserto.jpg");
+
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
 }
 
 body::before,
