@@ -1,0 +1,136 @@
+<!doctype html>
+<html lang="it">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Festa di compleanno - 13 giugno</title>
+  <meta name="description" content="Informazioni per la festa di compleanno di sabato 13 giugno: orari, pernottamento, cosa portare, parcheggio e indicazioni." />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="hero">
+    <div class="hero__content">
+      <p class="eyebrow">Sabato 13 giugno · dalle 18:00</p>
+      <h1>Festa di compleanno</h1>
+      <p class="hero__text">Una serata insieme tra cibo, amici e possibilità di dormire sul posto.</p>
+      <div class="hero__actions">
+        <a class="button" href="#sondaggio">Rispondi al sondaggio</a>
+        <a class="button button--secondary" href="#indicazioni">Come arrivare</a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="card-grid" aria-label="Informazioni principali">
+      <article class="card">
+        <span class="card__icon">🕕</span>
+        <h2>Quando</h2>
+        <p>La festa comincia <strong>sabato 13 giugno alle 18:00</strong>.</p>
+      </article>
+
+      <article class="card">
+        <span class="card__icon">🏕️</span>
+        <h2>Pernottamento</h2>
+        <p>Ci sono una ventina abbondante di posti al coperto. Serve <strong>sacco a pelo e materassino</strong>. C'è anche spazio per le tende.</p>
+      </article>
+
+      <article class="card">
+        <span class="card__icon">🥗</span>
+        <h2>Cosa portare</h2>
+        <p>Porta, se puoi, un <strong>cibo a piacere</strong> e una <strong>borraccia</strong> per l'acqua da bere.</p>
+      </article>
+
+      <article class="card">
+        <span class="card__icon">🚰</span>
+        <h2>Acqua</h2>
+        <p>La borraccia si può riempire alla fontana della piazza. Sul posto c'è acqua solo per lavarsi.</p>
+      </article>
+    </section>
+
+    <section id="indicazioni" class="section section--split">
+      <div>
+        <p class="eyebrow">Logistica</p>
+        <h2>Parcheggio e percorso a piedi</h2>
+        <p>Le macchine si lasciano al parcheggio di Rueglio, di fianco al campo da calcio.</p>
+        <p>Da lì si prosegue a piedi fino alla piazza del Municipio. Dopo i giardini e la fontana sulla destra, prendere via Enrico Compagno. Dopo circa 350 metri girare a destra in via Marchiaro Vigna Tambin, poi sempre dritto per altri 200 metri seguendo la strada comunale di cresta. Infine girare a sinistra dove ci sarà un'indicazione.</p>
+        <div class="link-row">
+          <a class="button" href="https://www.google.com/maps/place/45%C2%B028'02.7%22N+7%C2%B045'27.5%22E/@45.4674201,7.7550573,1003m/data=!3m2!1e3!4b1!4m4!3m3!8m2!3d45.4674201!4d7.7576322?hl=en&entry=ttu&g_ep=EgoyMDI2MDYwMS4wIKXMDSoASAFQAw%3D%3D" target="_blank" rel="noopener">Apri parcheggio</a>
+          <a class="button button--secondary" href="https://www.google.com/maps/place/45%C2%B028'19.1%22N+7%C2%B045'19.1%22E/@45.471975,7.7527368,1003m/data=!3m2!1e3!4b1!4m4!3m3!8m2!3d45.471975!4d7.7553117?hl=en&entry=ttu&g_ep=EgoyMDI2MDYwMS4wIKXMDSoASAFQAw%3D%3D" target="_blank" rel="noopener">Apri posto festa</a>
+        </div>
+      </div>
+
+      <aside class="note">
+        <h3>Da ricordare</h3>
+        <ul>
+          <li>Scarpe comode per il tratto a piedi.</li>
+          <li>Sacco a pelo e materassino se ti fermi a dormire.</li>
+          <li>Borraccia personale per l'acqua.</li>
+        </ul>
+      </aside>
+    </section>
+
+    <section id="sondaggio" class="section">
+      <p class="eyebrow">RSVP</p>
+      <h2>Sondaggio pernottamento</h2>
+      <p>Compila il form per dire se vieni e se ti fermi a dormire. I campi con asterisco sono obbligatori.</p>
+
+      <!--
+        IMPORTANTE:
+        Sostituisci YOUR_FORM_ID con il tuo endpoint Formspree, per esempio:
+        https://formspree.io/f/abcdwxyz
+      -->
+      <form id="rsvp-form" class="form" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+        <div class="form__row">
+          <label for="nome">Nome e cognome *</label>
+          <input id="nome" name="nome" type="text" autocomplete="name" required />
+        </div>
+
+        <div class="form__row">
+          <label for="email">Email</label>
+          <input id="email" name="email" type="email" autocomplete="email" />
+        </div>
+
+        <fieldset class="form__row">
+          <legend>Ci sarai? *</legend>
+          <label class="choice"><input type="radio" name="presenza" value="Si, ci saro" required /> Sì, ci sarò</label>
+          <label class="choice"><input type="radio" name="presenza" value="No, non riesco" /> No, non riesco</label>
+          <label class="choice"><input type="radio" name="presenza" value="Non lo so ancora" /> Non lo so ancora</label>
+        </fieldset>
+
+        <fieldset class="form__row">
+          <legend>Ti fermi a dormire? *</legend>
+          <label class="choice"><input type="radio" name="pernottamento" value="Si, al coperto" required /> Sì, al coperto</label>
+          <label class="choice"><input type="radio" name="pernottamento" value="Si, in tenda" /> Sì, in tenda</label>
+          <label class="choice"><input type="radio" name="pernottamento" value="No" /> No</label>
+          <label class="choice"><input type="radio" name="pernottamento" value="Non lo so ancora" /> Non lo so ancora</label>
+        </fieldset>
+
+        <div class="form__row">
+          <label for="persone">Numero di persone</label>
+          <input id="persone" name="numero_persone" type="number" min="1" max="10" value="1" />
+        </div>
+
+        <div class="form__row">
+          <label for="cibo">Cosa pensi di portare?</label>
+          <input id="cibo" name="cibo" type="text" placeholder="Es. torta salata, insalata, pane, dolce..." />
+        </div>
+
+        <div class="form__row">
+          <label for="messaggio">Note o esigenze particolari</label>
+          <textarea id="messaggio" name="messaggio" rows="4" placeholder="Allergie, intolleranze, arrivo più tardi, ecc."></textarea>
+        </div>
+
+        <input type="hidden" name="_subject" value="Risposta sondaggio festa di compleanno" />
+        <button class="button" type="submit">Invia risposta</button>
+        <p id="form-message" class="form__message" role="status" aria-live="polite"></p>
+      </form>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>A presto! 🎉</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
