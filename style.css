@@ -25,13 +25,7 @@ body {
   color: var(--ink);
   font-family: "Nunito", sans-serif;
 
-  background:
-    linear-gradient(
-      rgba(255, 247, 238, 0.75),
-      rgba(255, 247, 238, 0.75)
-    ),
-    url("20250423_073641.jpg");
-
+  background-image: url("20250423_073641.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
